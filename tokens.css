@@ -1,0 +1,43 @@
+/* Sistema de design | Treinamento Ayesa x ibp solutions (WS03)
+   Tokens extraídos da identidade visual do material do curso.
+   Não é o manual de marca oficial da Ayesa. */
+
+:root {
+  /* Cores */
+  --color-navy: #1F3864;        /* títulos, cabeçalhos, elementos principais */
+  --color-blue: #1565C0;        /* eyebrow, links, destaques secundários */
+  --color-yellow: #FFC000;      /* elemento ativo, destaque, ação principal */
+  --color-panel: #F7F7F5;       /* fundo de painéis e cards */
+  --color-line: #C9C9C4;        /* bordas e divisores */
+  --color-gray: #A6A6A6;        /* bordas tracejadas, itens inativos */
+  --color-gray-inactive: #D9D9D9;
+  --color-text: #333333;
+  --color-text-muted: #595959;
+  --color-white: #FFFFFF;
+
+  /* Tons de status (sem verde, sempre acompanhados de rótulo de texto) */
+  --status-ok-fg: #1F3864;
+  --status-ok-bg: #EAF0FA;
+  --status-pending-fg: #7A5A00;
+  --status-pending-bg: #FFF6D6;
+  --status-fail-fg: #FFFFFF;
+  --status-fail-bg: #1F3864;
+
+  /* Tipografia */
+  --font-family: Calibri, Carlito, "Segoe UI", Arial, sans-serif;
+  --font-size-eyebrow: 13px;
+  --font-size-title: 30px;
+  --font-size-subtitle: 20px;
+  --font-size-body: 15px;
+  --font-size-small: 12px;
+  --letter-spacing-eyebrow: 2px;
+
+  /* Espaçamento e forma */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 14px;
+  --space-4: 24px;
+  --space-5: 40px;
+  --radius: 0;                  /* cantos retos */
+  --border-dashed: 1.25px dashed var(--color-gray);
+}

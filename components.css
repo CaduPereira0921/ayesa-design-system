@@ -1,0 +1,50 @@
+@import url("tokens.css");
+
+* { box-sizing: border-box; }
+body { margin: 0; font-family: var(--font-family); font-size: var(--font-size-body); color: var(--color-text); background: var(--color-white); }
+
+/* Cabeçalho de página */
+.eyebrow { color: var(--color-blue); font-size: var(--font-size-eyebrow); font-weight: 700; letter-spacing: var(--letter-spacing-eyebrow); text-transform: uppercase; }
+.page-title { margin: var(--space-1) 0 0; color: var(--color-navy); font-size: var(--font-size-title); font-weight: 700; }
+.page-header { padding: var(--space-4) var(--space-4) var(--space-3); border-bottom: 1px solid var(--color-line); }
+.page-body { padding: var(--space-4); }
+
+/* Card e painel */
+.card { background: var(--color-panel); border: var(--border-dashed); padding: var(--space-3); border-radius: var(--radius); }
+.card--active { border: 2.5px solid var(--color-yellow); }
+.card--inactive { background: var(--color-white); color: var(--color-text-muted); }
+
+/* Indicador (KPI) */
+.kpi { background: var(--color-panel); border: var(--border-dashed); padding: var(--space-3); }
+.kpi__value { display: block; font-size: 28px; font-weight: 700; color: var(--color-navy); }
+.kpi__label { font-size: var(--font-size-small); color: var(--color-text-muted); }
+.kpi--highlight { border: 2.5px solid var(--color-yellow); }
+
+/* Botões */
+.btn { font: inherit; font-weight: 700; padding: var(--space-2) var(--space-3); border: 0; cursor: pointer; border-radius: var(--radius); }
+.btn--primary { background: var(--color-yellow); color: var(--color-navy); }
+.btn--secondary { background: var(--color-white); color: var(--color-navy); border: 1px solid var(--color-navy); }
+.btn:disabled { background: var(--color-gray-inactive); color: var(--color-text-muted); cursor: default; }
+.btn:focus-visible, .field:focus-visible { outline: 3px solid var(--color-blue); outline-offset: 2px; }
+
+/* Campos */
+.field { font: inherit; padding: var(--space-2) 10px; border: 1px solid var(--color-line); background: var(--color-white); border-radius: var(--radius); }
+
+/* Tabela */
+.table { width: 100%; border-collapse: collapse; }
+.table th { text-align: left; background: var(--color-navy); color: var(--color-white); padding: 10px; font-weight: 700; }
+.table td { padding: 10px; border-bottom: 1px solid var(--color-line); }
+.table tr:hover td { background: var(--color-panel); }
+
+/* Selos de status: sempre com texto, nunca só cor */
+.badge { display: inline-block; padding: 2px 10px; font-size: var(--font-size-small); font-weight: 700; border: 1px solid; }
+.badge--ok { color: var(--status-ok-fg); background: var(--status-ok-bg); border-color: var(--status-ok-fg); }
+.badge--pending { color: var(--status-pending-fg); background: var(--status-pending-bg); border-color: var(--color-yellow); }
+.badge--fail { color: var(--status-fail-fg); background: var(--status-fail-bg); border-color: var(--color-navy); }
+
+/* Alerta de lacuna (ex.: requisito sem teste) */
+.alert { border-left: 6px solid var(--color-yellow); background: #FFF6D6; color: var(--color-navy); padding: var(--space-3); font-weight: 700; }
+
+/* Barra de progresso (ex.: SLA) */
+.progress { height: 14px; background: var(--color-gray-inactive); }
+.progress__bar { height: 100%; background: var(--color-navy); }

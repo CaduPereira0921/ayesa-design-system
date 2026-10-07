@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Pré-visualização do sistema de design</title>
+<link rel="stylesheet" href="components.css">
+<style>
+  .row { display:flex; gap:14px; flex-wrap:wrap; margin-bottom:24px; }
+  .row > * { flex:1 1 180px; }
+  .swatch { height:56px; border:1px solid var(--color-line); }
+  h2 { color:var(--color-navy); font-size:var(--font-size-subtitle); margin:24px 0 10px; }
+</style>
+</head>
+<body>
+<header class="page-header">
+  <div class="eyebrow">Sistema de design | Treinamento Ayesa x ibp solutions</div>
+  <h1 class="page-title">Pré-visualização de tokens e componentes</h1>
+</header>
+<main class="page-body">
+  <h2>Cores</h2>
+  <div class="row">
+    <div><div class="swatch" style="background:var(--color-navy)"></div>Navy #1F3864</div>
+    <div><div class="swatch" style="background:var(--color-blue)"></div>Azul #1565C0</div>
+    <div><div class="swatch" style="background:var(--color-yellow)"></div>Amarelo #FFC000</div>
+    <div><div class="swatch" style="background:var(--color-panel)"></div>Painel #F7F7F5</div>
+    <div><div class="swatch" style="background:var(--color-gray-inactive)"></div>Inativo #D9D9D9</div>
+  </div>
+
+  <h2>Indicadores e alerta</h2>
+  <div class="row">
+    <div class="kpi"><span class="kpi__value">11</span><span class="kpi__label">Casos de teste</span></div>
+    <div class="kpi kpi--highlight"><span class="kpi__value">60 s</span><span class="kpi__label">SLA do documento FI</span></div>
+    <div class="kpi"><span class="kpi__value">2</span><span class="kpi__label">Falhas</span></div>
+  </div>
+  <div class="alert">REQ-MM-005 | Sem caso de teste</div>
+
+  <h2>Botões e campos</h2>
+  <div class="row">
+    <button class="btn btn--primary">Reprocessar</button>
+    <button class="btn btn--secondary">Limpar</button>
+    <button class="btn btn--primary" disabled>Indisponível</button>
+    <input class="field" placeholder="Buscar número da NF" aria-label="Buscar NF">
+  </div>
+
+  <h2>Tabela e status</h2>
+  <table class="table">
+    <thead><tr><th>Número da NF</th><th>Fornecedor</th><th>Documento FI</th><th>Ação</th></tr></thead>
+    <tbody>
+      <tr><td>000001</td><td>Fornecedor A</td><td><span class="badge badge--ok">Gerado</span></td><td>-</td></tr>
+      <tr><td>000002</td><td>Fornecedor B</td><td><span class="badge badge--pending">Pendente</span></td><td>-</td></tr>
+      <tr><td>000003</td><td>Fornecedor A</td><td><span class="badge badge--fail">Falha</span></td><td><button class="btn btn--primary">Reprocessar</button></td></tr>
+    </tbody>
+  </table>
+
+  <h2>Progresso</h2>
+  <div class="progress" role="progressbar" aria-valuenow="82" aria-valuemin="0" aria-valuemax="100"><div class="progress__bar" style="width:82%"></div></div>
+</main>
+</body>
+</html>
